@@ -398,3 +398,100 @@ Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.0ms)
 
 
   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/users/3" for ::1 at 2021-05-18 13:57:26 -0700
+Processing by UsersController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+No template found for UsersController#show, rendering head :no_content
+Completed 204 No Content in 16ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/users/1" for ::1 at 2021-05-18 13:58:04 -0700
+Processing by UsersController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+No template found for UsersController#show, rendering head :no_content
+Completed 204 No Content in 18ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/3" for ::1 at 2021-05-18 13:58:09 -0700
+Processing by UsersController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+No template found for UsersController#show, rendering head :no_content
+Completed 204 No Content in 7ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/3" for ::1 at 2021-05-18 13:59:06 -0700
+Processing by UsersController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/show.json.jbuilder
+  Rendered users/show.json.jbuilder (13.0ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.7ms)
+
+
+
+NoMethodError - undefined method `balance' for #<User:0x00007f7b8a328130>:
+  app/views/users/show.json.jbuilder:1:in `_app_views_users_show_json_jbuilder___1236665317302084480_22120'
+
+Started POST "/__better_errors/e9febaaebdc8052d/variables" for ::1 at 2021-05-18 13:59:07 -0700
+Started GET "/users/3" for ::1 at 2021-05-18 13:59:34 -0700
+Processing by UsersController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/show.json.jbuilder
+  Rendered users/show.json.jbuilder (6.6ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 4.0ms)
+
+
+
+NoMethodError - undefined method `balance' for #<User:0x00007f7b89295020>:
+  app/views/users/show.json.jbuilder:1:in `_app_views_users_show_json_jbuilder___1236665317302084480_23880'
+
+Started POST "/__better_errors/3af283c6475cbf6c/variables" for ::1 at 2021-05-18 13:59:34 -0700
+Started GET "/users/3" for ::1 at 2021-05-18 13:59:34 -0700
+Processing by UsersController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/show.json.jbuilder
+  Rendered users/show.json.jbuilder (14.9ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.8ms)
+
+
+
+NoMethodError - undefined method `balance' for #<User:0x00007f7b8919e108>:
+  app/views/users/show.json.jbuilder:1:in `_app_views_users_show_json_jbuilder___1236665317302084480_23960'
+
+Started POST "/__better_errors/162905ac2a32f25e/variables" for ::1 at 2021-05-18 13:59:35 -0700
+Started GET "/users/3" for ::1 at 2021-05-18 13:59:35 -0700
+Processing by UsersController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/show.json.jbuilder
+  Rendered users/show.json.jbuilder (3.3ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms)
+
+
+
+NoMethodError - undefined method `balance' for #<User:0x00007f7b943344d0>:
+  app/views/users/show.json.jbuilder:1:in `_app_views_users_show_json_jbuilder___1236665317302084480_24020'
+
+Started POST "/__better_errors/a69cf0415204a2de/variables" for ::1 at 2021-05-18 13:59:35 -0700
+Started GET "/users/3" for ::1 at 2021-05-18 13:59:44 -0700
+Processing by UsersController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/show.json.jbuilder
+  Rendered users/show.json.jbuilder (0.9ms)
+Completed 200 OK in 8ms (Views: 3.7ms | ActiveRecord: 0.5ms)
+
+

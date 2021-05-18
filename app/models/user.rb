@@ -34,10 +34,4 @@ class User < ApplicationRecord
     self.session_token ||= SecureRandom::urlsafe_base64
   end
 
-  has_many :stock_history, class_name: :Stock, foreign_key: :user_id
-
-  def current_stocks 
-    stock_history.group(:ticker).sum(:amount).select {|k, v| v > 0}
-  end
-
 end
