@@ -397,3 +397,4 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.0ms)
 
 
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
