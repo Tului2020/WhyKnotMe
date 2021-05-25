@@ -1384,3 +1384,61 @@ Completed 200 OK in 287ms (Views: 1.5ms | ActiveRecord: 21.4ms)
 
   [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/api/users" for ::1 at 2021-05-24 19:10:36 -0700
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"aprokudina", "first_name"=>"Angelina", "last_name"=>"Prokudina", "password"=>"[FILTERED]", "email"=>"aprokudina@gmail.com"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aprokudina"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "yUONbSdHQyv9FbbEG-awSQ"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/users_controller.rb:5
+Completed 401 Unauthorized in 283ms (Views: 0.1ms | ActiveRecord: 18.0ms)
+
+
+Started POST "/api/users" for ::1 at 2021-05-24 19:10:49 -0700
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"aprokudina2", "first_name"=>"Angelina", "last_name"=>"Prokudina", "password"=>"[FILTERED]", "email"=>"aprokudina@gmail.com"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aprokudina2"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "OewTciVDceXD7Bo9-0LAIw"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Angelina"], ["last_name", "Prokudina"], ["username", "aprokudina2"], ["email", "aprokudina@gmail.com"], ["password_digest", "$2a$12$qtGNtckvIKLRRvKFbFHxWuBTq.GIRlotseGfAaOCYwBSlIBSs7w7."], ["session_token", "OewTciVDceXD7Bo9-0LAIw"], ["created_at", "2021-05-25 02:10:50.237225"], ["updated_at", "2021-05-25 02:10:50.237225"]]
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:28
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "aprokudina2"], ["id", 7], ["LIMIT", 1]]
+  ↳ app/models/user.rb:28
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "YrC2nIoJpsbPfwgamWVySQ"], ["id", 7], ["LIMIT", 1]]
+  ↳ app/models/user.rb:28
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "YrC2nIoJpsbPfwgamWVySQ"], ["updated_at", "2021-05-25 02:10:50.241528"], ["id", 7]]
+  ↳ app/models/user.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:28
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/show.json.jbuilder (0.2ms)
+Completed 200 OK in 270ms (Views: 1.3ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/api/users" for ::1 at 2021-05-24 19:11:26 -0700
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"aprokudina2", "first_name"=>"Angelina", "last_name"=>"Prokudina", "password"=>"[FILTERED]", "email"=>"aprokudina@gmail.com"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aprokudina2"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aprokudina@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Gebk0C_BMKeU-ngiOso8nQ"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/users_controller.rb:5
+Completed 401 Unauthorized in 279ms (Views: 0.1ms | ActiveRecord: 13.2ms)
+
+
