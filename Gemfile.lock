@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/eric-norcross/puma.git
+  revision: fc97fdaab2290f93e348a23b5bec9b01e1f195bc
+  branch: chrome_70_ssl_curve_compatiblity
+  specs:
+    puma (3.12.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -114,6 +121,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.11.5-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.11.5-x86_64-linux)
+      racc (~> 1.4)
     pg (1.2.3)
     pry (0.14.1)
       coderay (~> 1.1)
@@ -121,8 +130,6 @@ GEM
     pry-rails (0.3.9)
       pry (>= 0.10.4)
     public_suffix (4.0.6)
-    puma (5.3.2)
-      nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
     rack-test (1.1.0)
@@ -206,6 +213,7 @@ GEM
 
 PLATFORMS
   universal-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   annotate
@@ -221,7 +229,7 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
   pry-rails
-  puma (>= 4.3.8)
+  puma!
   rails (~> 5.2.5)
   sass-rails (~> 5.0)
   selenium-webdriver
@@ -236,4 +244,4 @@ RUBY VERSION
    ruby 2.6.3p62
 
 BUNDLED WITH
-   2.2.17
+   2.2.19

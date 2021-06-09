@@ -1,0 +1,70 @@
+I, [2021-06-09T16:05:08.074719 #25868]  INFO -- : [07120444-8667-4169-ba9e-78d07533e9ac] Started GET "/" for 71.202.74.213 at 2021-06-09 16:05:08 +0000
+I, [2021-06-09T16:05:08.076616 #25868]  INFO -- : [07120444-8667-4169-ba9e-78d07533e9ac] Processing by StaticPagesController#root as HTML
+I, [2021-06-09T16:05:08.085936 #25868]  INFO -- : [07120444-8667-4169-ba9e-78d07533e9ac]   Rendering static_pages/root.html.erb within layouts/application
+I, [2021-06-09T16:05:08.086584 #25868]  INFO -- : [07120444-8667-4169-ba9e-78d07533e9ac]   Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+I, [2021-06-09T16:05:08.088386 #25868]  INFO -- : [07120444-8667-4169-ba9e-78d07533e9ac] Completed 500 Internal Server Error in 12ms
+F, [2021-06-09T16:05:08.089018 #25868] FATAL -- : [07120444-8667-4169-ba9e-78d07533e9ac]   
+F, [2021-06-09T16:05:08.089051 #25868] FATAL -- : [07120444-8667-4169-ba9e-78d07533e9ac] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+F, [2021-06-09T16:05:08.089157 #25868] FATAL -- : [07120444-8667-4169-ba9e-78d07533e9ac]      5:     <%= csrf_meta_tags %>
+[07120444-8667-4169-ba9e-78d07533e9ac]      6:     <%= csp_meta_tag %>
+[07120444-8667-4169-ba9e-78d07533e9ac]      7: 
+[07120444-8667-4169-ba9e-78d07533e9ac]      8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+[07120444-8667-4169-ba9e-78d07533e9ac]      9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+[07120444-8667-4169-ba9e-78d07533e9ac]     10:   </head>
+[07120444-8667-4169-ba9e-78d07533e9ac]     11: 
+F, [2021-06-09T16:05:08.089170 #25868] FATAL -- : [07120444-8667-4169-ba9e-78d07533e9ac]   
+F, [2021-06-09T16:05:08.089188 #25868] FATAL -- : [07120444-8667-4169-ba9e-78d07533e9ac] app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2479897659154931528_46977389957660'
+I, [2021-06-09T19:15:07.200912 #17613]  INFO -- : [f118e4ce-36fc-4d46-966e-22514983b96e] Started GET "/" for 71.202.74.213 at 2021-06-09 19:15:07 +0000
+I, [2021-06-09T19:15:07.207359 #17613]  INFO -- : [f118e4ce-36fc-4d46-966e-22514983b96e] Processing by StaticPagesController#root as HTML
+I, [2021-06-09T19:15:07.226527 #17613]  INFO -- : [f118e4ce-36fc-4d46-966e-22514983b96e]   Rendering static_pages/root.html.erb within layouts/application
+I, [2021-06-09T19:15:07.228393 #17613]  INFO -- : [f118e4ce-36fc-4d46-966e-22514983b96e]   Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+I, [2021-06-09T19:15:07.230163 #17613]  INFO -- : [f118e4ce-36fc-4d46-966e-22514983b96e] Completed 500 Internal Server Error in 23ms
+F, [2021-06-09T19:15:07.231667 #17613] FATAL -- : [f118e4ce-36fc-4d46-966e-22514983b96e]   
+F, [2021-06-09T19:15:07.231713 #17613] FATAL -- : [f118e4ce-36fc-4d46-966e-22514983b96e] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+F, [2021-06-09T19:15:07.231819 #17613] FATAL -- : [f118e4ce-36fc-4d46-966e-22514983b96e]      5:     <%= csrf_meta_tags %>
+[f118e4ce-36fc-4d46-966e-22514983b96e]      6:     <%= csp_meta_tag %>
+[f118e4ce-36fc-4d46-966e-22514983b96e]      7: 
+[f118e4ce-36fc-4d46-966e-22514983b96e]      8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+[f118e4ce-36fc-4d46-966e-22514983b96e]      9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+[f118e4ce-36fc-4d46-966e-22514983b96e]     10:   </head>
+[f118e4ce-36fc-4d46-966e-22514983b96e]     11: 
+F, [2021-06-09T19:15:07.231832 #17613] FATAL -- : [f118e4ce-36fc-4d46-966e-22514983b96e]   
+F, [2021-06-09T19:15:07.231850 #17613] FATAL -- : [f118e4ce-36fc-4d46-966e-22514983b96e] app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__448906004714141446_47400446017680'
+I, [2021-06-09T19:15:24.299780 #17613]  INFO -- : [cb8fa10c-2282-4b83-8401-fcae791764c0] Started GET "/pages/facebook" for 71.202.74.213 at 2021-06-09 19:15:24 +0000
+I, [2021-06-09T19:15:24.300683 #17613]  INFO -- : [cb8fa10c-2282-4b83-8401-fcae791764c0] Processing by Pages::PagesController#facebook as HTML
+I, [2021-06-09T19:15:24.303439 #17613]  INFO -- : [cb8fa10c-2282-4b83-8401-fcae791764c0]   Rendering pages/facebook.erb within layouts/application
+I, [2021-06-09T19:15:24.304060 #17613]  INFO -- : [cb8fa10c-2282-4b83-8401-fcae791764c0]   Rendered pages/facebook.erb within layouts/application (0.5ms)
+I, [2021-06-09T19:15:24.309123 #17613]  INFO -- : [cb8fa10c-2282-4b83-8401-fcae791764c0] Completed 500 Internal Server Error in 8ms
+F, [2021-06-09T19:15:24.309639 #17613] FATAL -- : [cb8fa10c-2282-4b83-8401-fcae791764c0]   
+F, [2021-06-09T19:15:24.309665 #17613] FATAL -- : [cb8fa10c-2282-4b83-8401-fcae791764c0] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+F, [2021-06-09T19:15:24.309756 #17613] FATAL -- : [cb8fa10c-2282-4b83-8401-fcae791764c0]      5:     <%= csrf_meta_tags %>
+[cb8fa10c-2282-4b83-8401-fcae791764c0]      6:     <%= csp_meta_tag %>
+[cb8fa10c-2282-4b83-8401-fcae791764c0]      7: 
+[cb8fa10c-2282-4b83-8401-fcae791764c0]      8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+[cb8fa10c-2282-4b83-8401-fcae791764c0]      9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+[cb8fa10c-2282-4b83-8401-fcae791764c0]     10:   </head>
+[cb8fa10c-2282-4b83-8401-fcae791764c0]     11: 
+F, [2021-06-09T19:15:24.309775 #17613] FATAL -- : [cb8fa10c-2282-4b83-8401-fcae791764c0]   
+F, [2021-06-09T19:15:24.309794 #17613] FATAL -- : [cb8fa10c-2282-4b83-8401-fcae791764c0] app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__448906004714141446_47400446017680'
+[cb8fa10c-2282-4b83-8401-fcae791764c0] app/controllers/pages/pages_controller.rb:13:in `facebook'
+I, [2021-06-09T19:15:31.181127 #17613]  INFO -- : [42bbc03b-e2ae-4617-b26a-a315e6f767e5] Started GET "/pages/facebook" for 71.202.74.213 at 2021-06-09 19:15:31 +0000
+I, [2021-06-09T19:15:31.181790 #17613]  INFO -- : [42bbc03b-e2ae-4617-b26a-a315e6f767e5] Processing by Pages::PagesController#facebook as HTML
+I, [2021-06-09T19:15:31.182829 #17613]  INFO -- : [42bbc03b-e2ae-4617-b26a-a315e6f767e5]   Rendering pages/facebook.erb within layouts/application
+I, [2021-06-09T19:15:31.182928 #17613]  INFO -- : [42bbc03b-e2ae-4617-b26a-a315e6f767e5]   Rendered pages/facebook.erb within layouts/application (0.0ms)
+I, [2021-06-09T19:15:31.183700 #17613]  INFO -- : [42bbc03b-e2ae-4617-b26a-a315e6f767e5] Completed 500 Internal Server Error in 2ms
+F, [2021-06-09T19:15:31.184154 #17613] FATAL -- : [42bbc03b-e2ae-4617-b26a-a315e6f767e5]   
+F, [2021-06-09T19:15:31.184179 #17613] FATAL -- : [42bbc03b-e2ae-4617-b26a-a315e6f767e5] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+F, [2021-06-09T19:15:31.184256 #17613] FATAL -- : [42bbc03b-e2ae-4617-b26a-a315e6f767e5]      5:     <%= csrf_meta_tags %>
+[42bbc03b-e2ae-4617-b26a-a315e6f767e5]      6:     <%= csp_meta_tag %>
+[42bbc03b-e2ae-4617-b26a-a315e6f767e5]      7: 
+[42bbc03b-e2ae-4617-b26a-a315e6f767e5]      8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+[42bbc03b-e2ae-4617-b26a-a315e6f767e5]      9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+[42bbc03b-e2ae-4617-b26a-a315e6f767e5]     10:   </head>
+[42bbc03b-e2ae-4617-b26a-a315e6f767e5]     11: 
+F, [2021-06-09T19:15:31.184269 #17613] FATAL -- : [42bbc03b-e2ae-4617-b26a-a315e6f767e5]   
+F, [2021-06-09T19:15:31.184285 #17613] FATAL -- : [42bbc03b-e2ae-4617-b26a-a315e6f767e5] app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__448906004714141446_47400446017680'
+[42bbc03b-e2ae-4617-b26a-a315e6f767e5] app/controllers/pages/pages_controller.rb:13:in `facebook'
